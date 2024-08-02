@@ -4,7 +4,7 @@ module.exports = (formulario) => {
   var transporter = nodemailer.createTransport({
     host: 'smtp.resend.com',
     secure: true,
-    port: 465,
+    port: 587,
   auth: {
   user: 'resend', // Cambialo por tu email
   pass: 're_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5' // Cambialo por tu password re_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5
