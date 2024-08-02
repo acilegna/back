@@ -2,10 +2,12 @@ const nodemailer = require('nodemailer');
 
 module.exports = (formulario) => {
   var transporter = nodemailer.createTransport({
-  service: 'gmail',
+    host: 'smtp.resend.com',
+    secure: true,
+    port: 465,
   auth: {
-  user: 'acilegna.airam88@gmail.com', // Cambialo por tu email
-  pass: 'nzql iljq cpbu ocle' // Cambialo por tu password
+  user: 'resend', // Cambialo por tu email
+  pass: 're_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5' // Cambialo por tu password re_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5
   }
   });
 
@@ -13,9 +15,9 @@ module.exports = (formulario) => {
 const mailOptions = {
  
  
-  from: ` <strong>${formulario.nombre}:</strong>`,
-
-  to: 'amgye2188@gmail.com', // Cambia esta parte por el destinatario
+  //from: ` <strong>${formulario.nombre}:</strong>`,
+  from: ` <onboarding@resend.dev>`,
+  to: 'm4x1miliano.2022@gmail.com', // Cambia esta parte por el destinatario
   subject: 'Email Portafolio',
   html: `
   <strong>Nombre:</strong> ${formulario.nombre} <br/>
