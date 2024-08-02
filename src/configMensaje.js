@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 module.exports = (formulario) => {
   var transporter = nodemailer.createTransport({
     host: "smtp.resend.com",  
-    port: 587,
+    port: 465,
     secure: true,
     auth: {
       user: "resend", // Cambialo por tu email
