@@ -11,9 +11,10 @@ module.exports = (formulario) => {
     },
   });
 
+  
   const mailOptions = {
-    //from: ` <strong>${formulario.nombre}:</strong>`,
-    from: `<onboarding@resend.dev>`,
+    from: ` <strong>${formulario.nombre}:</strong>`,
+    //from: `<onboarding@resend.dev>`,
     to: "m4x1miliano.2022@gmail.com", // Cambia esta parte por el destinatario
     subject: "Email Portafolio",
     html: `
