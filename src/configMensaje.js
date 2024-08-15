@@ -23,6 +23,8 @@ module.exports = (formulario) => {
 }; */
 
   
+  
+
 const nodemailer = require("nodemailer");
 
 module.exports = (formulario) => {
@@ -58,4 +60,4 @@ module.exports = (formulario) => {
       console.log("Enviado! " + info.response);
     }
   });
-}; 
+};
