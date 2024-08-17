@@ -4,8 +4,8 @@ const instanceResend = new Resend("re_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5");
 
 module.exports = async (formulario) => {
   const { data, error } = await instanceResend.emails.send({
-    from: "Acme <onboarding@resend.dev>",
-    to: ["m4x1miliano.2022@gmail.com"],
+    from: "Acme <acilegna.airam88@gmail.com>",
+    to: ["acilegnaairam88@outlook.com"],
     subject: "Hello World",
     html: `
   <strong>Nombre:</strong> ${formulario.nombre} <br/>
@@ -18,6 +18,5 @@ module.exports = async (formulario) => {
     return console.error({ error });
   }
 
-  console.log({ data });
-  console.log(instanceResend.domains.list());
+
 }; 
