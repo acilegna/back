@@ -11,11 +11,18 @@ const configMensaje = require("./src/configMensaje");
 
 
 const app = express();
+const issue2options = {
+  origin: true,
+  methods: ["POST"],
+  credentials: true,
+  maxAge: 3600
+};
 
 app.use(bodyParser.json());
 app.use(cors());
+ 
 
-app.post("/formulario", (req, res) => {
+app.post("/formulario",   cors(issue2options),  (req, res) => {
   configMensaje(req.body);
   res.status(200).send();
 });
