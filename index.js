@@ -3,7 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import configMensaje from './src/configMensaje.js'; */
 
-/* const express = require("express");
+ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const configMensaje = require("./src/configMensaje");
@@ -27,9 +27,12 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("Servidor corriendos ");
 });
- */
+ 
 
-const express = require("express");
+
+
+
+/* const express = require("express");
  
 const { Resend } = require("resend");
 const instanceResend = new Resend("re_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5");
@@ -38,7 +41,7 @@ const instanceResend = new Resend("re_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5");
  
 const app = express();
 
-app.get("/", async (req, res) => {
+app.get("/formulario", async (req, res) => {
   const { data, error } = await instanceResend.emails.send({
     from: "Acme <onboarding@resend.dev>",
     to: ["m4x1miliano.2022@gmail.com"],
@@ -55,4 +58,4 @@ app.get("/", async (req, res) => {
 
 app.listen(3000, () => {
   console.log("Listening on http://localhost:3000");
-});
+}); */
