@@ -3,23 +3,18 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import configMensaje from './src/configMensaje.js'; */
 
-/* const express = require("express");
+const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const configMensaje = require("./src/configMensaje");
 
 const app = express();
-const issue2options = {
-  origin: true,
-  methods: ["post"],
-  credentials: true,
-  maxAge: 3600,
-};
 
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post("/formulario", cors(issue2options), (req, res) => {
+app.post("/formulario", cors(), (req, res) => {
+  console.log(req.body)
   configMensaje(req.body);
   res.status(200).send();
 });
@@ -30,9 +25,9 @@ app.get("/", (req, res) => {
 
 app.listen(3000, () => {
   console.log("Servidor corriendos ");
-}); */
+});
 
-const express = require("express");
+/* const express = require("express");
 const { Resend } = require("resend");
 const instanceResend = new Resend("re_N3XRTEJu_49mNXGANgbmS91TgPsEGQcE5");
 const app = express();
@@ -56,3 +51,4 @@ app.get("/formulario", async ( req, res) => {
 app.listen(3000, () => {
   console.log("Listening on http://localhost:3000");
 });
+ */
