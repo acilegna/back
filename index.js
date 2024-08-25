@@ -26,7 +26,7 @@ app.listen(3000, () => {
 
  
 
-/* funciona!!
+/* funciona bien !!
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
