@@ -15,12 +15,12 @@ const envioCorreo = (req = request, resp = response) => {
   });
 
   const opciones = {
-    from: body.nombre,
-    to: body.email,
-    subject: body.mensaje,
-    html: `         
-        <strong>Mensaje:</strong> ${body.mensaje}
-        `,
+    from: ` <strong>${body.nombre}:</strong>`,
+    to: "m4x1miliano.2022@gmail.com",
+    subject: "Solicitando Información",
+    html: `<strong>Te contacta:</strong> ${body.nombre}<br/>
+    <strong>E-mail:</strong> ${body.email} <br/>
+     <strong>Mensaje:</strong> ${body.mensaje}`,
   };
 
   config.sendMail(opciones, function (error, result) {
