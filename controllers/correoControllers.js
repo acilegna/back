@@ -1,5 +1,5 @@
 const { request, response } = require("express");
-const { model } = require("mongoose");
+//const { model } = require("mongoose");
 const nodemailer = require("nodemailer");
 
 const envioCorreo = (req = request, resp = response) => {

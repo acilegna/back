@@ -3,6 +3,6 @@ const app = express();
 
 let formulario = require("../controllers/correoControllers");
 
-app.post("/formulario", formulario.envioCorreo);
+app.post("/form", formulario.envioCorreo);
 
 module.exports = app;
