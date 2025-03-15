@@ -16,7 +16,7 @@ const envioCorreo = (req = request, resp = response) => {
 
   const opciones = {
     from: ` <strong>${body.nombre}:</strong>`,
-    to: "m4x1miliano.2022@gmail.com",
+    to: "acilegna.airam88@gmail.com",
     subject: "Solicitando Información",
     html: `<strong>Te contacta:</strong> ${body.nombre}<br/>
     <strong>E-mail:</strong> ${body.email} <br/>
